@@ -1,5 +1,12 @@
 pipeline{
     agent any
+	
+	environment {
+		registry = "dofl0119/calculator"
+		registryCredential = 'dockerhub'
+		dockerImage = ''
+	}
+
     stages{
         stage('checkout'){
             steps{
@@ -30,6 +37,14 @@ pipeline{
 		{
 			steps{
 				sh "./gradlew build"
+			}
+		}
+		stage('Deploy Image')
+		{
+			steps{
+				script{
+					dockerImage = docker.build registry + ":$BUILD_NUMBER"
+				}
 			}
 		}
     }
