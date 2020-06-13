@@ -57,18 +57,6 @@ pipeline{
 				}
 			}
 		}
-		stage('Deploy to Staging')
-		{
-			steps{
-				script{
-					docker.withServer('tcp://docker:2376', ''){
-						dockerImage.withRun("-p 8090:8090"){
-							sleep 10
-						}
-					}
-				}
-			}
-		}
 		stage('Acceptance Testing')
 		{
 			steps{
@@ -81,7 +69,6 @@ pipeline{
 					}
 				}
 			}
-
 		}
     }
 }
