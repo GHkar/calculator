@@ -57,18 +57,17 @@ pipeline{
 				}
 			}
 		}
-		stage('Acceptance Testing')
-		{
-			steps{
-				script{
-					docker.withServer('tcp://docker:2376',''){
-						dockerImage.withRun("-p 8090:8090"){
-							sleep 10
-							sh './acceptance_test.bash'
-						}
-					}
-				}
+		stage('Acceptance Testing'){
+	    steps {
+		script {
+		    docker.withServer('tcp://docker:2376',''){
+			dockerImage.withRun('-p 8090:8090') {
+			     sleep 10
+			     sh './acceptance_test.bash'
 			}
+		    }
 		}
+	    }
+        }
     }
 }
