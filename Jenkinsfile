@@ -62,7 +62,7 @@ pipeline{
 			steps{
 				script{
 					docker.withServer('tcp://docker:2376', ''){
-						dockerImage.withRun('-p 8090:8090'){
+						dockerImage.withRun("-p 8090:8090"){
 							sleep 20
 							sh 'curl -X GET http://docker:8090/sum?a=1\\&b=3'
 						}
@@ -75,7 +75,7 @@ pipeline{
 			steps{
 				script{
 					docker.withServer('tcp://docker:2376',''){
-						dockerImage.withRun('-p 8090:8090'){
+						dockerImage.withRun("-p 8090:8090"){
 							sleep 10
 							sh './acceptance_test.bash'
 						}
