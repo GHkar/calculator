@@ -64,7 +64,7 @@ pipeline{
 					docker.withServer('tcp://docker:2376', ''){
 						dockerImage.withRun('-p 8090:8090'){
 							sleep 10
-							sh 'curl -X GET http://docker:8090/sum?a=1&b=3'
+							sh 'curl -X GET http://docker:8090/sum?a=1\\&b=3'
 						}
 					}
 				}
