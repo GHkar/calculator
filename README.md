@@ -17,15 +17,15 @@
 계산기 코드, 도커, 젠킨스를 기반으로 지속적인 배포 시스템을 구현
 
 >1. 도커를 통해 젠킨스를 설치
-2. 젠킨스 파이프라인을 활용하여 계산기 코드의 단위 테스트 수행
-3. JaCoCo를 사용하여 코드 커버리지 테스트
-4. Checkstyle로 코드 품질 검사
-5. 이미지를 생성 후 도커 허브(Docker Hub)에 업로드
+>2. 젠킨스 파이프라인을 활용하여 계산기 코드의 단위 테스트 수행
+>3. JaCoCo를 사용하여 코드 커버리지 테스트
+>4. Checkstyle로 코드 품질 검사
+>5. 이미지를 생성 후 도커 허브(Docker Hub)에 업로드
 >>https://hub.docker.com/r/dofl0119/hello_world_python   
 >>https://hub.docker.com/r/dofl0119/calculator
 >6. 젠킨스와 Git을 연동하여 수락 테스트
-7. Docker Compose 테스트를 위해 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 활용
-8. 구성 관리 도구 Ansible-playbook을 사용하여 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 환경을 자동으로 구성
+>7. Docker Compose 테스트를 위해 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 활용
+>8. 구성 관리 도구 Ansible-playbook을 사용하여 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 환경을 자동으로 구성
 
 
 
