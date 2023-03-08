@@ -27,7 +27,7 @@
 >7. Docker Compose 테스트를 위해 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 활용
 >8. 구성 관리 도구 Ansible-playbook을 사용하여 계산기 코드와 Nginx/리버스 프록시(Reverse Proxy) 환경을 자동으로 구성
 
-<img src="image/00. Caclulator 레포지토리용 그림.png" width="60%"></img>
+<img src="image/00. Caclulator 레포지토리용 그림.png"></img>
 
 
 
