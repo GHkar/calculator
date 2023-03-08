@@ -1,4 +1,4 @@
-## calculator
+## alculator
 두 개의 수를 입력 받아 합을 알려주는 계산기 소스코드
 
 ## 도커(Docker)
