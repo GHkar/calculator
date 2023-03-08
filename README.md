@@ -4,13 +4,13 @@
 ## 도커(Docker)
 리눅스의 응용 프로그램들을 프로세스 격리 기술들을 사용해 컨테이너로 실행하고 관리하는 오픈 소스 프로젝트   
 [출처 : 위키백과](https://ko.wikipedia.org/wiki/%EB%8F%84%EC%BB%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4))
-도커의 사용법(네트워크 구성, 볼륨 마운트 등)과 도커파일(DockerFile) 사용법에 대해 익힘   
+>도커의 사용법(네트워크 구성, 볼륨 마운트 등)과 도커파일(DockerFile) 사용법에 대해 익힘   
 <https://www.docker.com/>
 
 ## 젠킨스(Jenkins)
 소프트웨어 개발 시 지속적 통합 서비스를 제공하는 툴   
 [출처 : 위키백과](https://ko.wikipedia.org/wiki/%EC%A0%A0%ED%82%A8%EC%8A%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4))
-간단한 python 프로그래밍을 통해 젠킨스의 구조(Master-slave)를 이해하고 스크립트 사용법(Pipe-line)에 대해 익힘   
+>간단한 python 프로그래밍을 통해 젠킨스의 구조(Master-slave)를 이해하고 스크립트 사용법(Pipe-line)에 대해 익힘   
 <https://www.jenkins.io/>
 
 ## Aim
